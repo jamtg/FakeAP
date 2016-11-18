@@ -1,0 +1,11 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{% for item in data %}
+<p>Username:{{ item.username }},Password:{{ item.password }},Addr:{{item.remote_addr}},User:{{item.remote_user}}</p>
+{% endfor %}
+</body>
+</html>
