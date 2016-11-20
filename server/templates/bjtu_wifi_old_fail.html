@@ -1,10 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<head><!--Provoke the inclusion of text depending on the client auth state -->
     <meta charset="UTF-8">
-    <title></title>
+    <SCRIPT language=JavaScript>
+        function checkvalue() {
+            if (loginForm.PtUser.value == null || loginForm.PtUser.value == "") {
+                alert("请输入您的用户名。");
+                document.loginForm.PtUser.focus();
+                return false;
+            }
+            return true;
+        }
+
+        // The backup and restore warning informations,by g02084,2006-12-29.
+        // Get the screen width and heighth
+        var posLeft = parseInt(screen.availWidth * 70.0 / 100);
+        var posHeight = parseInt(screen.availHeight * 50.0 / 100);
+
+        function getWarnShellStyle() {
+            var styleTest = "z-index:10002;width:210;height:110;left:" + posLeft
+                    + ";top:" + posHeight + ";background-color:slategray;color:red;"
+                    + "font-size:12px;font-family:Verdana;position:absolute;"
+                    + "cursor:default;border:1px solid slategray;";
+            return styleTest;
+        }
+
+        function getWarnContentStyle() {
+            var styleTest = "width:210;height:110;left:" + posLeft
+                    + ";top:" + posHeight + ";z-index:10001;position:absolute;"
+                    + "background-color:black;filter:alpha(opacity=40);";
+            return styleTest;
+        }
+    </SCRIPT>
+
+    <style type="text/css">
+        <!--
+        body {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            color: #000000;
+        }
+
+        td {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            color: #000000;
+        }
+
+        h3 {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            color: #1E3C78;
+            font-size: 14px;
+        }
+
+        .STYLE1 {
+            font-size: 11mm
+        }
+
+        .STYLE2 {
+            font-size: 24px
+        }
+
+        .STYLE3 {
+            font-size: 18px
+        }
+
+        .STYLE4 {
+            font-size: 24pt
+        }
+
+        .STYLE6 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .STYLE7 {
+            font-size: 16px
+        }
+
+        -->
+    </style>
+    <!-- Modify web page title below --><title>北京交通大学无线网络认证系统</title><!-- End modification web page title -->
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 </head>
 <body>
 
+<!-- Modify company .gif and greeting below -->
+
+<center>
+    <img src="{{ url_for('static',filename='image/bjtu.jpg') }}" alt="Company Logo" border="0" height="72" width="776">
+</center>
+<h1 align="center" class="STYLE1"><font color="#CC6699">无线校园网认证系统</font></h1>
+
+<h1 align="center" class="STYLE1"><font color="#CC6699" class="STYLE2">Wireless Network Authentication System</font>
+</h1>
+&nbsp;</p>
+
+<!-- End modification company .gif and greeting -->
+
+<!-- DO_NOT_MODIFY_THE_SOURCE BEGIN -->
+
+<hr>
+<br>
+
+<FORM name="loginForm" onSubmit="return checkvalue();" action="" method="post">
+    <div align="center" class="STYLE6">
+        <p style="color:red">用户名或密码错误！请重新登录! </p>
+
+        <p class="STYLE3" style="color:red">Username or password is wrong! Please logon again!</p>
+    </div>
+  <span class="MsoNormal STYLE4">
+  <o:p></o:p>
+  </span><span class="MsoNormal"><span
+        lang=EN-US><o:p></o:p>
+  </span></span>
+    <br>
+    <table border="0" align="center" cellpadding="3">
+        <tbody>
+        <tr>
+            <td align="right"><span class="STYLE7">用户名(username):</span></td>
+            <td><input type="text" name="username" style="width:160px;height:22px" maxlength=64></td>
+        </tr>
+        <tr>
+            <td align="right"><span class="STYLE7">密码(password)</span><span class="STYLE7">:</span></td>
+            <td><input type="password" name="password" style="width:160px;height:22px" maxlength=32></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+
+                <div align="center">
+                    <input type=SUBMIT value="Logon" name="PtButton" style="width:80px;">
+                    <input type=SUBMIT value="Logoff" name="PtButton2" style="width:80px;">
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+<hr>
+<p><!-- END DO_NOT_MODIFY_THE_SOURCE -->
+    <!-- Modify warning statement below -->
+</p>
+
+<p align="center" class="STYLE3"><span class="STYLE3">注意事项</span> Notice</p>
+
+<p align="center" class="STYLE3">用户名/密码处请输入您在校园网计费网关上的用户名和密码</p>
+
+<p align="center" class="STYLE3">Please enter your username and password of campus network billing gateway</p>
 </body>
 </html>

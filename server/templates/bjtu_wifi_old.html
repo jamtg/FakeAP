@@ -1,7 +1,9 @@
-<html lang="en">
-<head><!--Provoke the inclusion of text depending on the client auth state -->
+<HTML>
+<HEAD>
+    <META content="IE=5.0000" http-equiv="X-UA-Compatible">
     <meta charset="UTF-8">
-    <script language="JavaScript">
+    <!--Provoke the inclusion of text depending on the client auth state -->
+    <SCRIPT language="JavaScript">
         function checkvalue() {
             if (loginForm.PtUser.value == null || loginForm.PtUser.value == "") {
                 alert("请输入您的用户名。");
@@ -30,15 +32,9 @@
                     + "background-color:black;filter:alpha(opacity=40);";
             return styleTest;
         }
-        function init() {
-            var _availTime = document.getElementById("errormsg");
-            var script = document.createElement("script");
-            script.src = "errormessage" + location.search;
-            _availTime.appendChild(script);
-        }
-    </script>
+    </SCRIPT>
 
-    <style type="text/css">
+    <STYLE type="text/css">
         <!--
         body {
             font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -75,64 +71,59 @@
         }
 
         -->
-    </style>
-    <!-- Modify web page title below --><title>北京交通大学无线网络认证系统</title><!-- End modification web page title -->
-    <meta http-equiv="Content-Type" content="text/html; charset=gbk">
-</head>
-<body onload="init()">
-<!-- Modify company .gif and greeting below -->
+    </STYLE>
+    <!-- Modify web page title below --><TITLE>北京交通大学无线网络认证系统</TITLE><!-- End modification web page title -->
+    <META http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <META name="GENERATOR" content="MSHTML 11.00.9600.18315">
+</HEAD>
+<BODY> <!-- Modify company .gif and greeting below -->
+<CENTER><IMG width="776" height="72" alt="Company Logo" src="{{ url_for('static',filename='image/bjtu.jpg') }}"
+             border="0"></CENTER>
+<H1 align="center" class="STYLE1"><FONT color="#cc6699">无线校园网认证系统</FONT></H1>
 
-<center>
-    <img src="{{ url_for('static',filename='image/bjtu.jpg') }}" alt="Company Logo" height="72" border="0" width="776">
-</center>
-<h1 class="STYLE1" align="center"><font color="#CC6699">无线校园网认证系统</font></h1>
+<H1 align="center" class="STYLE1"><FONT class="STYLE2" color="#cc6699">Wireless
+    Network Authentication System</FONT></H1>&nbsp;
+<P></P>
+<HR>
+<BR>
 
-<h1 class="STYLE1" align="center"><font class="STYLE2" color="#CC6699">Wireless Network Authentication System</font>
-</h1>
-&nbsp;<p></p>
-<hr>
-<br>
+<FORM name="loginForm" onsubmit="return checkvalue();" action=""
+      method="post">
+    <TABLE align="center" border="0" cellpadding="3">
+        <TBODY>
+        <TR>
+            <TD align="right"><SPAN class="STYLE4">用户名(username)</SPAN><SPAN class="STYLE4">:</SPAN></TD>
+            <TD><INPUT name="username" style="width: 160px; height: 22px;" type="text" maxlength="64"></TD>
+        </TR>
+        <TR>
+            <TD align="right">
+                <P class="STYLE4">密码(password):</P></TD>
+            <TD><INPUT name="password" style="width: 160px; height: 22px;" type="password" maxlength="32"></TD>
+        </TR>
+        <TR>
+            <TD align="right" colspan="2">
+                <DIV align="center"><INPUT name="PtButton" style="width: 80px;" type="SUBMIT" value="Logon">
 
-<form name="loginForm" onsubmit="return checkvalue();" action="" method="post">
-    <table align="center" border="0" cellpadding="3">
-        <tbody>
-        <tr>
-            <!--<td id="errormsg" colspan="2" style="color:red;font-size:15px" align="left">认证失败</td>-->
-        </tr>
-        <tr>
-            <td align="right"><span class="STYLE4">用户名(username)</span><span class="STYLE4">:</span></td>
-            <td><input name="username" style="width:160px;height:22px" maxlength="64" type="text"></td>
-        </tr>
-        <tr>
-            <td align="right"><p class="STYLE4">密码(password):</p></td>
-            <td><input name="password" style="width:160px;height:22px" maxlength="32" type="password"></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="right">
+                    <INPUT name="PtButton2" style="width: 80px;" type="SUBMIT" value="Logoff">
+                </DIV>
+            </TD>
+        </TR>
+        </TBODY>
+    </TABLE>
+</FORM>
+<HR>
 
-                <div align="center">
-                    <input value="Logon" name="PtButton" style="width:80px;" type="SUBMIT">
-                    <input value="Logoff" name="PtButton2" style="width:80px;" type="SUBMIT">
-                </div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</form>
-<hr>
-<p><!-- END DO_NOT_MODIFY_THE_SOURCE -->
-    <!-- Modify warning statement below -->
-</p>
+<P><!-- END DO_NOT_MODIFY_THE_SOURCE -->   <!-- Modify warning statement below -->
+</P>
 
-<p class="STYLE3" align="center"><span class="STYLE3">注意事项 </span>Notice </p>
+<P align="center" class="STYLE3"><SPAN class="STYLE3">注意事项 </SPAN>Notice </P>
 
-<p class="STYLE3" align="center">用户名/密码处请输入您在校园网计费网关上的用户名和密码</p>
+<P align="center" class="STYLE3">用户名/密码处请输入您在校园网计费网关上的用户名和密码</P>
 
-<p class="STYLE3" align="center">Please enter your username and password of campus network billing gateway</p>
+<P align="center" class="STYLE3">Please enter your username and password of
+    campus network billing gateway</P>
 
-<p class="STYLE3" align="center">&nbsp;</p>
+<P align="center" class="STYLE3">&nbsp;</P>
 
-<p align="center">&nbsp;</p>
-
-</body>
-</html>
+<P align="center">&nbsp;</P></BODY>
+</HTML>

